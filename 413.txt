@@ -1,0 +1,188 @@
+박스속성
+콘텐츠 패딩 보더 마진
+웹브라우저 f12 관리자도구 c sh c
+확인가능
+
+div 단순묶기 자동 줄바꿈
+spen 단순묶기
+
+선택자 우선순위
+. 클래스 
+# 아이디
+
+박스크기 속성값 개수
+마진 - 탑 라이트 바텀 레프트 시계방향으로 위치함
+
+
+불투명도 속성
+6단원 23p참고
+링크 방문하지 않았던곳 표시
+호버 마우스 포인트 올릴떄 변화 표시
+
+그레디언트
+linear 점점 스며들게
+
+함수
+효율적으로 중복제거 보다 용이하게 사용가능
+
+<style>
+기본타입div {
+width: 100px;
+height: 100px;
+border: 1px dotted black;
+background-color: skyblue;
+margin: 50px;
+}
+선택 아이디 div#box1 {
+transform: scale(0.5, 0.5);
+}
+선택아이디 div#box2 {
+transform: scale(2, 1.5);
+}
+</style>
+</head>
+<body>
+<div>기본 박스</div>
+<div id="box1">박스 1 (0.5배 축소)</div>
+<div id="box2">박스 2 (가로 2배, 세로 1.5배 확대)</div>
+</body>
+
+자바스크립트
+정적인 html 자바스크립트를 이용 사용자와 상호작용가능
+동적인 페이지구성 가능
+
+특정버튼하나로 자바스크립트 각각의 로직실행으로 구현가능
+
+정리.
+1. 자바스크립트는 사용자와 상호작용하는 언어. 
+2. HTML은 웹 브라우저 화면에 한 번 출력되면 바꿀수 없음.
+자바스크립트 코드에 따라 바꿀수 있음. 
+HTML을 제어하는 언어. 훨씬 더 동적으로 바꿔 줌. 
+작업자페이지에서 버튼 눌렀을시 실시간으로 바뀌는거 확인가능
+
+자바스크립트 실행시 동적으로 변환표현
+<script> 태그 사용한다
+
+
+<body>
+  <input type="button" value="hi" onclick="alert('hi')">
+  <input type="text" onchange="alert('changed')">
+</body>
+검색어 변경시에 창 뜸
+
+<body>
+  <input type="button" value="hi" onclick="alert('hi')">
+  <input type="text" onchange="alert('changed')">
+  <input type="text" onkeydown="alert('key down')">
+</body>
+onkeydown 누를때마다 알림
+
+실행여부 확인가능
+
+콘솔에서 사칙연산 가능 글자수확인 가능
+
+데이터타입 6가지
+숫자 사칙연산
+alert(1+1)
+
+문자열 '' /""/ 꼴 세트로 사용해야함
+
+string 
+ex)''.메서드
+'hello  '.length
+7
+글자수는 1부터
+
+'hello'.toUpperCase();
+'HELLO'
+
+'hello'.indexOf('o');
+4
+'hello'.indexOf();
+-1
+가장 앞 h 부터 0에서부터 시작
+
+''의 중요성 문자열! 문자열 이음
+1+1
+2
+'1'+'1'
+'11'
+
+1+2+'3'
+'33'
+
+
+변수
+x=1;
+1
+x+=2
+3
+x
+3
+x+2
+5
+
+문자열의 연결
+var name='egoing'
+undefined
+" abcd  " + name +  " abcd  " + name +  " abcd  " + name 
+' abcd  egoing abcd  egoing abcd  egoing'
+var name='hello'
+undefined
+" abcd  " + name +  " abcd  " + name +  " abcd  " + name 
+' abcd  hello abcd  hello abcd  hello'
+
+css 기초 : 선택자. 
+웹 페이지를 구성하는 여러 요소에 효과를 효율적으로 줄 수 있음. 
+우선 순위 : 아이디 > 클래스 > 선택자. 
+
+특정개체 상속계념 . 으로 
+연속해서 들어가는 개념
+<input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        ">
+자바스크립트로 할수 있는 가장 중요한 일은 사용자와 상호작용해서 
+HTML 과 CSS를 프로그래밍적으로 동적으로 변경. 
+좀 더 단순하게 만드는 테크닉 살펴보기
+
+조건문 반복문
+한버튼으로 양쪽 다 가능 토글
+
+if 명제가 참일경우 거짓일경우
+참일때 실행할 문장
+거짓일떄 실행할 문장
+===(=0)
+
+
+레스댄 그레이트댄
+괄호 특수문자
+
+<h2>IF-true</h2>
+  <script>
+    document.write("1<br>");
+    if(true) {
+      document.write("2<br>");
+    } else {
+      document.write("3<br>");
+    }
+    document.write("4<br>");
+  </script>
+
+124
+
+<script>
+    document.write("1<br>");
+    if(false) {
+      document.write("2<br>");
+    } else {
+      document.write("3<br>");
+    }
+    document.write("4<br>");
+  </script>
+  134
+
+중복 this.value로 대체가능
+target으로 대체가능
+
+
