@@ -152,10 +152,14 @@ HTML 과 CSS를 프로그래밍적으로 동적으로 변경.
 if 명제가 참일경우 거짓일경우
 참일때 실행할 문장
 거짓일떄 실행할 문장
+
+
 ===(=0)
 
+HTML 에서는 <가 태그를 시작하는 문법이기 때문에 <를 출력하고자 할 때는 
+'less than' 이라는 뜻에서 &lt; 라고 씀. 
 
-레스댄 그레이트댄
+&lt; &gt;
 괄호 특수문자
 
 <h2>IF-true</h2>
@@ -182,7 +186,11 @@ if 명제가 참일경우 거짓일경우
   </script>
   134
 
-중복 this.value로 대체가능
-target으로 대체가능
+중복
+this
+onclick과 같은 이벤트 안에서 실행되는 코드에서는 현재 코드가 속해 있는 태그를 가리키도록 약속돼 있는 특수한 키워드 사용 
+this.value로 대체가능
 
-
+target
+target변수를 쓰는 부분들 상단에 var target = document.querySelector('body'); 로 변경시
+target 변수를 쓰는 모든 코드 한 번에 대체가능
